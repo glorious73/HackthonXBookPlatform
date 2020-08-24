@@ -1,0 +1,18 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ }
+
+ :root {
+    --white: #ffffff;
+    --silver: #E5E5E5;
+    --yellow: #FCA311;
+    --darkblue: #14213D;
+    --black: #000000;
+ }
+
+ body {
+    background-color: var(--white);
+    font-family: 'Nunito', Helvetica, sans-serif;
+}

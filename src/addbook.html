@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    @partial("partials/_dependencies.html")
+    <title>Hackathon X Book Platform</title>
+</head>
+<body>
+    @partial("partials/_navbar.html")
+    <div class="container">
+        <form class="card card-white d-flex flex-column justify-content-stretch align-items-center w-100" id="addBookForm">
+              <div class="form-row">
+                <h1>Add a Book</h1>
+                <p>To add a book, please fill the form below.</p>
+              </div>
+              <hr class="silver-line w-100">
+              <div class="form-row">
+                <label for="Title">Title</label>
+                <input type="text" class="input-text" id="Title" name="Title">
+              </div>
+              <div class="form-row">
+                <label for="Author">Author</label>
+                <input type="text" class="input-text" id="Author" name="Author">
+              </div>
+              <div class="form-row">
+                <label for="ISBN">ISBN</label>
+                <input type="text" class="input-text" id="ISBN" name="ISBN">
+              </div>
+              <div class="form-row">
+                <label for="Description">Description</label>
+                <input type="text" class="input-text" id="Description" name="Description">
+              </div>
+              <div class="form-row">
+                <label for="ReleaseDate">Release Date</label>
+                <input type="text" class="input-text" id="ReleaseDate" name="ReleaseDate">
+              </div>
+              <div class="form-row">
+                <label for="Pages">Pages</label>
+                <input type="text" class="input-text" id="Pages" name="Pages">
+              </div>
+              <div class="form-row">
+                <label for="CategoryCode">Category Code</label>
+                <input type="number" class="input-text" id="CategoryCode" name="CategoryCode">
+              </div>
+              <div class="form-row">
+                <button type="submit" class="btn btn-block btn-submit" id="btnSubmit">
+                  Add Book  
+                </button>
+              </div>
+        </form>
+    </div>
+    @partial("partials/_footer.html")
+    @partial("partials/_scripts.html")
+</body>
+</html>

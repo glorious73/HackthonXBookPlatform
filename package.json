@@ -1,0 +1,24 @@
+{
+  "name": "hackthonx.bookplatform.frontend",
+  "version": "1.0.0",
+  "description": "front end for the book platform application",
+  "main": "app.js",
+  "scripts": {
+    "dev": "parcel src/*.html --out-dir dev",
+    "build": "parcel build src/*.html"
+  },
+  "keywords": [
+    "hackathonx",
+    "ydevs"
+  ],
+  "author": "ydevs",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.11.4",
+    "@babel/plugin-transform-runtime": "^7.11.0",
+    "@babel/preset-env": "^7.11.0",
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-html-partials": "0.0.6"
+  }
+}

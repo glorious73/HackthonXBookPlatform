@@ -1,0 +1,92 @@
+/*-- Card --*/
+.card {
+    animation: 0.2s ease-in-out 0s 1 fadeIn;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.2);
+    border-radius: 0.8rem;
+    border: 1px solid var(--silver);
+    transition: 0.3s;
+  }
+  
+.card-white {
+    background: var(--white);
+    color: var(--black);
+}
+
+.card:hover {
+    box-shadow: 0 1.5px 1.5px 0 rgba(0,0,0,0.2);
+}
+
+.card-logo {
+    width: 45%;
+    height: auto;
+    justify-self: center;
+    margin: 1rem auto 0.1rem auto;
+}
+
+.card-header-image {
+    height: 300px;
+    width: auto;
+    padding: 0.5rem;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0.1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+/*-- /Card --*/
+
+/*-- Button --*/
+.btn {
+    padding: 0.7rem;
+    text-decoration: none;
+    border: none;
+    border-radius: 0.4rem;
+    font-weight: bold;
+}
+.btn-block {
+    display: block;
+}
+.btn-submit, .btn-edit {
+    color: var(--white);
+}
+.btn-submit {
+    background-color: var(--darkblue);
+    color: var(--white);
+    width: 100%;
+}
+.btn-edit {
+    background-color: transparent;
+}
+button:hover {
+    opacity: 0.9;
+}
+button:focus {
+    opacity: 1; 
+}
+button:hover, button:focus {
+    cursor: pointer;
+    outline: none;
+}
+button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+/*-- /Button --*/
+
+/*-- Line --*/
+.silver-line {
+    color: var(--silver);    
+}
+/*-- /Line --*/
+
+/*-- book --*/
+.book-info-section {
+    min-height: 2rem;
+    max-height: 2rem;
+}
+/*-- /book --*/

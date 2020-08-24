@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    @partial("partials/_dependencies.html")
+    <title>Hackathon X Book Platform</title>
+</head>
+<body>
+    @partial("partials/_navbar.html")
+    <div class="container">
+        <form class="card card-white d-flex flex-column justify-content-stretch align-items-center w-100" id="loginForm">
+              <div class="form-row">
+                <h1>Login</h1>
+                <p>Please login below.</p>
+              </div>
+              <hr class="silver-line w-100">
+              <div class="form-row">
+                <label for="Username">Email/Username</label>
+                <input type="text" class="input-text" id="Username" name="Username">
+              </div>
+              <div class="form-row">
+                <label for="Password">Password</label>
+                <input type="password" class="input-text" id="Password" name="Password">
+              </div>
+              <div class="form-row">
+                <button type="submit" class="btn btn-block btn-submit" id="btnSubmit">
+                  Login  
+                </button>
+              </div>
+        </form>
+    </div>
+    @partial("partials/_footer.html")
+    @partial("partials/_scripts.html")
+</body>
+</html>

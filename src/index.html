@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    @partial("partials/_dependencies.html")
+    <title>Hackathon X Book Platform</title>
+</head>
+<body>
+    @partial("partials/_navbar.html")
+    <div class="container">
+        <div class="d-flex flex-row flex-wrap" id="booksSection">
+
+        </div>
+    </div>
+    <!-- Book Template -->
+    <template id="bookTemplate">
+        <div class="container card card-white d-flex flex-column align-items-start mx-2">
+            <img class="card-header-image" src="https://www.kindpng.com/picc/m/725-7251301_book-cover-placeholder-hd-png-download.png" alt="Book">
+            <!--Title-->
+            <div class="my-05 align-items-start book-info-section">
+                <h5>Title</h5>
+                <h5 id="bookTitle"></h5>
+            </div>
+            <!--Author-->
+            <div class="my-05 align-items-start book-info-section">
+                <h5>Author</h5>
+                <h5 id="bookAuthor"></h5>
+            </div>
+            <!--Author-->
+            <div class="my-05 align-items-start book-info-section">
+                <h5>Category</h5>
+                <h5 id="bookCategory"></h5>
+            </div>
+            <!--ISBN-->
+            <div class="my-05 align-items-start book-info-section">
+                <h5>ISBN</h5>
+                <h5 id="bookIsbn"></h5>
+            </div>
+            <div class="my-05 align-items-start word-wrap book-info-section">
+                <!--Description-->
+                <h5>Description</h5>
+                <h5 id="bookDesc"></h5>
+            </div>
+            <!--Pages-->
+            <div class="my-05 align-items-start book-info-section">
+                <h5>Pages</h5>
+                <h5 id="bookPages"></h5>
+            </div>
+            <!--IsAvailable-->
+            <div class="my-05 align-items-start book-info-section">
+                <h5>Availability</h5>
+                <h5 id="bookAvailability"></h5>
+            </div>
+            <!--Added by-->
+            <div class="my-05 align-items-start book-info-section">
+                <h5>Added By</h5>
+                <h5 id="bookUser"></h5>
+            </div>
+            <!--Order-->
+            <div class="my-05 d-flex flex-row justify-content-center w-100">
+                <button class="btn btn-block w-100 btn-submit btn-order" id="orderButton">
+                    Place Order
+                </button>
+            </div>
+        </div>
+    </template>
+    @partial("partials/_footer.html")
+    @partial("partials/_scripts.html")
+</body>
+</html>

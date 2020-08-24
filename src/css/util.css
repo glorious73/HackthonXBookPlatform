@@ -1,0 +1,91 @@
+.container {
+    padding: 3rem 5rem;
+    margin: auto;
+}
+
+/*-- Flex --*/
+.d-flex {
+    display: flex;
+}
+.flex-row {
+    flex-direction: row;
+}
+.flex-column {
+    flex-direction: column;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.flex-grow-1 {
+    flex-grow: 1;
+}
+.justify-content-center {
+    justify-content: center;
+}
+.justify-content-stretch {
+    justify-content: stretch;
+}
+.align-items-center {
+    align-items: center;
+}
+.align-items-start {
+    align-items: start;
+    align-items: flex-start;
+}
+/*-- /Flex --*/
+
+/*-- Margin --*/
+.mx-1 {
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+.mx-2 {
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+.mx-3 {
+    margin-right: 3rem;
+    margin-left: 3rem;
+}
+.mx-4 {
+    margin-right: 4rem;
+    margin-left: 4rem;
+}
+.mx-5 {
+    margin-right: 5rem;
+    margin-left: 5rem;
+}
+.my-05 {
+    margin-top: 1rem;;
+    margin-bottom: 1rem;;
+}
+/*-- /Margin --*/
+
+/*-- Width&Height --*/
+.w-100 {
+    width: 100%;
+}
+/*-- /Width&Height --*/
+
+/* Wrod wrap */
+.word-wrap {
+    max-width: 200px;
+    word-wrap: break-word;
+}
+
+
+/*-- Phones --*/
+@media (max-width: 767.98px) { 
+    .container {
+        padding: 1rem;
+        margin: auto;
+    }    
+}
+
+/*-- Tablets --*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .container {
+        padding: 1.5rem;
+        margin: auto;
+    }    
+}
